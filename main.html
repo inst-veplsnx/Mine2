@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10"C"-дің 15 гүлі</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq-section {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+    .faq-section h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .faq-item:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .faq-item details {
+      padding: 20px;
+    }
+    .faq-item summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      padding-right: 25px;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-item summary::after {
+      content: "▼";
+      font-size: 0.8em;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease;
+    }
+    .faq-item details[open] summary::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+    .faq-answer {
+      margin-top: 10px;
+      padding-left: 20px;
+      border-left: 3px solid #fde2e4;
+    }
+    .persistent-audio {
+      text-align: center;
+      margin: 20px 0;
+    }
+    #audioToggle {
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #f8c5b4, #fde2e4);
+      border: none;
+      color: #333;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #audioToggle:hover {
+      background: linear-gradient(45deg, #fde2e4, #f8c5b4);
+    }
+  </style>
+</head>
+<body>
+  <div class="persistent-audio">
+    <button id="audioToggle">Включить музыку</button>
+    <audio id="backgroundAudio" src="audio/akha_kakaya.mp3" loop></audio>
+  </div>
+  <div id="pageContent">
+    <header class="global_header">
+      <h1>Халықаралық әйелдер күнімен!</h1>
+      <p>Сайтты қарсы алыңыздар.</p>
+    </header>
+    <p>ㅤ</p>
+    <p>ㅤ</p>
+    <main>
+      <section class="girls-grid">
+        <a href="girl1.html" class="girl-card">
+          <img src="images/Mariyam.jfif" alt="Мариям">
+          <h2>Мариям</h2>
+        </a>
+        <a href="girl2.html" class="girl-card">
+          <img src="images/Nazerke+Ayaulym.jfif" alt="Назерке">
+          <h2>Назерке</h2>
+        </a>
+        <a href="girl3.html" class="girl-card">
+          <img src="images/Ayaulym.jfif" alt="Аяулым">
+          <h2>Аяулым</h2>
+        </a>
+        <a href="girl4.html" class="girl-card">
+          <img src="images/Karakat.jfif" alt="Қарақат">
+          <h2>Қарақат</h2>
+        </a>
+        <a href="girl5.html" class="girl-card">
+          <img src="images/Akberen.jfif" alt="Ақберен">
+          <h2>Ақберен</h2>
+        </a>
+        <a href="girl6.html" class="girl-card">
+          <img src="images/Aigerim.jfif" alt="Әйгерім">
+          <h2>Әйгерім</h2>
+        </a>
+        <a href="girl7.html" class="girl-card">
+          <img src="images/Inkar.jfif" alt="Іңкәр">
+          <h2>Іңкәр</h2>
+        </a>
+        <a href="girl8.html" class="girl-card">
+          <img src="images/Aknur.jfif" alt="Ақнұр">
+          <h2>Ақнұр</h2>
+        </a>
+        <a href="girl9.html" class="girl-card">
+          <img src="images/D.Alima.jfif" alt="Д.Алима">
+          <h2>Д.Алима</h2>
+        </a>
+        <a href="girl10.html" class="girl-card">
+          <img src="images/T.Alima.jfif" alt="Т.Әлима">
+          <h2>Т.Әлима</h2>
+        </a>
+        <a href="girl11.html" class="girl-card">
+          <img src="images/Inabat.jfif" alt="Инабат">
+          <h2>Инабат</h2>
+        </a>
+        <a href="girl12.html" class="girl-card">
+          <img src="images/M.Yenlik.jpg" alt="М.Еңлік">
+          <h2>М.Еңлік</h2>
+        </a>
+        <a href="girl13.html" class="girl-card">
+          <img src="images/A.Yenlik.jfif" alt="А.Еңлік">
+          <h2>А.Еңлік</h2>
+        </a>
+        <a href="girl14.html" class="girl-card">
+          <img src="images/Altynai.jpg" alt="Алтынай">
+          <h2>Алтынай</h2>
+        </a>
+        <a href="girl15.html" class="girl-card">
+          <img src="images/Raushan.jfif" alt="Раушан">
+          <h2>Раушан</h2>
+        </a>
+      </section>
+      <section class="faq-section">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-item">
+          <details>
+            <summary>Кто самые красивые девочки?</summary>
+            <div class="faq-answer">
+              <p>Каждая из вас сияет по-своему, и ваша уникальная красота вдохновляет всех вокруг!</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Почему вы такие очаровательные?</summary>
+            <div class="faq-answer">
+              <p>Ваше обаяние и улыбка способны осветить даже самый пасмурный день. Вы — воплощение нежности и грации!</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Что делает вас особенными?</summary>
+            <div class="faq-answer">
+              <p>Ваша индивидуальность, ум и доброта делают вас по-настоящему уникальными и незабываемыми!</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Как можно описать вашу красоту?</summary>
+            <div class="faq-answer">
+              <p>Вы — как утренний рассвет: нежные, светлые и дарящие надежду на чудо!</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Кім пикми?</summary>
+            <div class="faq-answer">
+              <p>Біздің қыздарды пикми деп айтуға ешкімнің хақысы жоқ!!!<a href="pashalko.html" class="pashalko">Пасхалко</a></p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; Құрметпен 10«С» ұлдары</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

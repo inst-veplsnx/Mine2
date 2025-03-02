@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приглашение – Мероприятие</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .invitation-video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      display: block;
+    }
+    .invitation-details {
+      text-align: center;
+      margin: 20px;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+    .dress-code {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fde2e4;
+      border-radius: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .intro {
+      text-align: center;
+      font-size: 16px;
+      margin: 10px auto;
+      max-width: 600px;
+      color: #555;
+      font-style: italic;
+    }
+    #backBtn_l {
+      padding: 10px 20px;
+      border: none;
+      background: #ff6f61;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="pageContent">
+    <header class="global_header">
+      <h1>Приглашение</h1>
+      <p>Добро пожаловать на наш вечер!</p>
+    </header>
+    <p class="intro">P.S: Нажмите по странице на любом месте</p>
+    <main id="content">
+      <video class="invitation-video" src="video/venue.mp4" autoplay loop muted playsinline></video>
+      <div class="invitation-details">
+        <p>Дорогие девушки, мы рады пригласить вас на незабываемый вечер в Антикафе.</p>
+        <p>В этот раз все будет по другому, каждый придет не просто покушать, а весело провести время в комфортной обствановке, с миллионами игр.</p>
+        <p class="dress-code">Дресс-код: Свободная, удобная для игр одежда</p>
+        <p>Среда(05.03.25) после уроков</p>
+        <button id="backBtn_l">Вернуться на главную</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Құрметпен 10«С» ұлдары</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script>
+      document.addEventListener('click', function unmuteVideo() {
+      const video = document.querySelector('.invitation-video');
+      if (video && video.muted) {
+        video.muted = false;
+        video.play().catch(e => console.log("Ошибка воспроизведения видео:", e));
+      }
+      document.removeEventListener('click', unmuteVideo);
+    });
+    document.getElementById('backBtn_l').addEventListener('click', function(){
+      window.location.href = 'main.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пасхалко – Тест для приглашения</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form ol {
+      list-style-position: inside;
+      margin-left: 0;
+      padding-left: 20px;
+    }
+    form li {
+      margin-bottom: 20px;
+    }
+    form li label {
+      display: inline;
+      margin-bottom: 10px; 
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    form .options {
+      margin-top:12px;
+      margin-bottom: 15px;
+    }
+    form input[type="radio"] {
+      margin-right: 10px;
+    }
+    form button[type="submit"] {
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #f8c5b4, #fde2e4);
+      border: none;
+      color: #333;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button[type="submit"]:hover {
+      background: linear-gradient(45deg, #fde2e4, #f8c5b4);
+    }
+    .local-audio {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="pageContent">
+    <header class="girl-header">
+      <h1>Пасхалко</h1>
+      <p>Пройди тест, чтобы получить приглашение</p>
+    </header>
+    <div class="local-audio">
+      <audio id="localBackgroundAudio" src="audio/local_audio.mp3" loop autoplay muted></audio>
+    </div>
+    <main>
+      <form id="pashalkoTest">
+        <ol>
+          <li>
+            <label for="q1">Чего боится Акжол больше всего?</label><br>
+            <input type="radio" name="q1" value="a" id="q1_a">
+            <label for="q1_a">Морозильников</label><br>
+            <input type="radio" name="q1" value="b" id="q1_b">
+            <label for="q1_b">Зеркал на шкафах</label><br>
+            <input type="radio" name="q1" value="c" id="q1_c">
+            <label for="q1_c">Ламп</label>
+          </li>
+          <li>
+            <label for="q2">Что выбрал бы Нурислам к планам на вечер?</label><br>
+            <input type="radio" name="q2" value="a" id="q2_a">
+            <label for="q2_a">Погулять</label><br>
+            <input type="radio" name="q2" value="b" id="q2_b">
+            <label for="q2_b">Кодинг шесть часов</label><br>
+            <input type="radio" name="q2" value="c" id="q2_c">
+            <label for="q2_c">Дз + подготовка к сорам</label>
+          </li>
+          <li>
+            <label for="q3">Что нравится Бакберу больше всего?</label><br>
+            <input type="radio" name="q3" value="a" id="q3_a">
+            <label for="q3_a">Игры</label><br>
+            <input type="radio" name="q3" value="b" id="q3_b">
+            <label for="q3_b">Книги</label><br>
+            <input type="radio" name="q3" value="c" id="q3_c">
+            <label for="q3_c">Еда</label>
+          </li>
+          <li>
+            <label for="q4">Почему Алиахмет не может дышать и глотать одновременно?</label><br>
+            <input type="radio" name="q4" value="a" id="q4_a">
+            <label for="q4_a">Потому что это не культурно!</label><br>
+            <input type="radio" name="q4" value="b" id="q4_b">
+            <label for="q4_b">Потому что еда идущее в желудок не позволяет воздуху свободно входить и выходить в лёгкие</label><br>
+            <input type="radio" name="q4" value="c" id="q4_c">
+            <label for="q4_c">Из-за автоматического закрытие пути в трахею специальным хрещяным клапаном надгортанника</label>
+          </li>
+          <li>
+            <label for="q5">Любимое блюдо Ислама</label><br>
+            <input type="radio" name="q5" value="a" id="q5_a">
+            <label for="q5_a">Манты</label><br>
+            <input type="radio" name="q5" value="b" id="q5_b">
+            <label for="q5_b">Лагман</label><br>
+            <input type="radio" name="q5" value="c" id="q5_c">
+            <label for="q5_c">Плов</label>
+          </li>
+          <li>
+            <label for="q6">Что больше всего мотивирует Дидара учится?</label><br>
+            <input type="radio" name="q6" value="a" id="q6_a">
+            <label for="q6_a">Еда</label><br>
+            <input type="radio" name="q6" value="b" id="q6_b">
+            <label for="q6_b">Сон</label><br>
+            <input type="radio" name="q6" value="c" id="q6_c">
+            <label for="q6_c">Поддержка родных</label>
+          </li>
+          <li>
+            <label for="q7">Какой гормон больше всего предпочитает Ернур?</label><br>
+            <input type="radio" name="q7" value="a" id="q7_a">
+            <label for="q7_a">Тестостерон</label><br>
+            <input type="radio" name="q7" value="b" id="q7_b">
+            <label for="q7_b">Ацетилхолин</label><br>
+            <input type="radio" name="q7" value="c" id="q7_c">
+            <label for="q7_c">ГАМК</label>
+          </li>
+          <li>
+            <label for="q8">Любимый вид спорта Аяна?</label><br>
+            <input type="radio" name="q8" value="a" id="q8_a">
+            <label for="q8_a">Плавание</label><br>
+            <input type="radio" name="q8" value="b" id="q8_b">
+            <label for="q8_b">Баскетбол</label><br>
+            <input type="radio" name="q8" value="c" id="q8_c">
+            <label for="q8_c">Футбол</label>
+          </li>
+          <li>
+            <label for="q9">Любимое блюдо Мираса?</label><br>
+            <input type="radio" name="q9" value="a" id="q9_a">
+            <label for="q9_a">Плов</label><br>
+            <input type="radio" name="q9" value="b" id="q9_b">
+            <label for="q9_b">Манты</label><br>
+            <input type="radio" name="q9" value="c" id="q9_c">
+            <label for="q9_c">Шашлык</label>
+          </li>
+        </ol>
+        <div style="text-align: center; margin-top: 20px;">
+          <button type="submit">Проверить ответы</button>
+        </div>
+      </form>
+      
+    </main>
+    <footer>
+      <p>&copy; Құрметпен 10«С» ұлдары</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('click', function unmuteLocalAudio() {
+      const localAudio = document.getElementById('localBackgroundAudio');
+      if (localAudio && localAudio.muted) {
+        localAudio.muted = false;
+        localAudio.play().catch(e => console.log("Ошибка воспроизведения локального аудио:", e));
+        console.log("Локальное аудио теперь не muted");
+      }
+      document.removeEventListener('click', unmuteLocalAudio);
+    });
+    document.getElementById("pashalkoTest").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const correctAnswers = {
+        q1: "a",
+        q2: "b",
+        q3: "b",
+        q4: "c",
+        q5: "a",
+        q6: "c",
+        q7: "b",
+        q8: "a",
+        q9: "c"
+      }; 
+      let wrongQuestions = [];
+      for (let question in correctAnswers) {
+        const selected = document.querySelector(`input[name="${question}"]:checked`);
+        if (!selected || selected.value !== correctAnswers[question]) {
+          wrongQuestions.push(question.substring(1));
+        }
+      }
+      if (wrongQuestions.length === 0) {
+        window.location.href = "invitation.html";
+      } else {
+        alert("Неверные ответы в вопросах: " + wrongQuestions.join(", ") + ". Пожалуйста, проверьте и попробуйте снова.");
+      }
+    });
+  </script>
+</body>
+</html>
+
